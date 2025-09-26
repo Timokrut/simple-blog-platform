@@ -7,6 +7,7 @@
 - Merges with conflicts: 2
 
 ## Branch History
+```bash
 *   670087b (HEAD -> main, origin/main) Merge branch 'documentation'
 |\
 | * 5d6df84 (documentation) documentaion update
@@ -27,6 +28,7 @@
 |/
 * 5a7a165 Add posts page and functionality
 * b1f3b5f Initial project setup
+```
 
 ## Lessons Learned
 Вроде бы понял все что было про ветки и слияния, но пока выполнял задание, возникло 1(2) проблемы. А именно пункт 16 и 17
@@ -52,13 +54,14 @@ feature/design
 </nav>
 ```
 
-### Логи 
+### Логи к п.16 и п.17
 ```bash
 $ git branch
   feature/comments
   feature/design
   feature/posts
 * main
+
 $ git log --oneline
 5a7a165 (HEAD -> main, feature/posts) Add posts page and functionality
 b1f3b5f Initial project setup
@@ -69,10 +72,12 @@ Fast-forward
  js/comments.js | 5 +++++
  2 files changed, 9 insertions(+)
  create mode 100644 js/comments.js
+
 $ git merge feature/design
 Auto-merging index.html
 CONFLICT (content): Merge conflict in index.html
 Automatic merge failed; fix conflicts and then commit the result.
+
 $ cat index.html
 <h1>Simple Blog</h1>
 <<<<<<< HEAD
@@ -86,5 +91,5 @@ $ cat index.html
     <a href="posts.html">Posts</a>
 </nav>
 >>>>>>> feature/design
-$
+
 ```
