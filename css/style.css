@@ -12,5 +12,6 @@ h1 {
 
 .header {
     text-align: left;
+    text-align: center; /* объединил? */ 
     font-size: 2em;
 }
